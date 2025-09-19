@@ -1,51 +1,100 @@
-# Astro on Netlify Platform Starter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anis ❤️ Haziq Wedding</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #faf8f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #e4d3c5;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #7a4a31;
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    .rsvp a, .gift a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #7a4a31;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e4d3c5;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anis ❤️ Haziq</h1>
+    <p>Wedding Celebration</p>
+    <p><strong>25 December 2025</strong> | Astana Kemangi, Kuala Lumpur</p>
+  </header>
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
+  <section class="invitation">
+    <h2>With joyful hearts</h2>
+    <p>We warmly invite you to celebrate our union blessed by the Almighty. Please join us in this moment of love and happiness.</p>
+  </section>
 
-A modern starter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+  <section class="rsvp">
+    <h2>RSVP</h2>
+    <p>Please confirm your attendance by clicking the link below:</p>
+    <a href="https://forms.gle/your-google-form-link" target="_blank">RSVP Here</a>
+  </section>
 
-## Astro Commands
+  <section class="map">
+    <h2>Location</h2>
+    <p>Astana Kemangi, Kuala Lumpur</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..."></iframe>
+  </section>
 
-All commands are run from the root of the project, from a terminal:
+  <section class="gift">
+    <h2>Gift & Contributions</h2>
+    <p>Your presence is the greatest gift, but if you wish to contribute:</p>
+    <p><strong>Bank Name:</strong> Maybank<br>
+       <strong>Account No:</strong> 1234567890<br>
+       <strong>Name:</strong> Anis Binti XXXX</p>
+    <a href="https://www.maybank2u.com.my" target="_blank">Send Gift</a>
+  </section>
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## Deploying to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter)
-
-## Developing Locally
-
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v18.14+.                                      |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
-
-1. Clone this repository, then run `npm install` in its root directory.
-
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
-
-```
-npm install netlify-cli@latest -g
-```
-
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
-
-```
-netlify link
-```
-
-4. Then, run the Astro.js development server via Netlify CLI:
-
-```
-netlify dev
-```
-
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+  <footer>
+    <p>With love, Anis & Haziq</p>
+    <p>#SmittenWithHaziqAndAnis</p>
+  </footer>
+</body>
+</html>
